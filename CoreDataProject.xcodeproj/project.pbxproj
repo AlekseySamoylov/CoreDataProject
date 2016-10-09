@@ -24,6 +24,8 @@
 		97536CB81DA8152800D56DCF /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97536CB01DA8152800D56DCF /* Store+CoreDataProperties.swift */; };
 		97536CB91DA8152800D56DCF /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97536CB11DA8152800D56DCF /* ItemType+CoreDataClass.swift */; };
 		97536CBA1DA8152800D56DCF /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97536CB21DA8152800D56DCF /* ItemType+CoreDataProperties.swift */; };
+		97DE17581DAA69680045E946 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE17571DAA69680045E946 /* ItemDetailsVC.swift */; };
+		97DE175A1DAA6DEC0045E946 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE17591DAA6DEC0045E946 /* CustomTextField.swift */; };
 		97F7DDFC1DA96B5F008F33BE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7DDFB1DA96B5F008F33BE /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		97536CB01DA8152800D56DCF /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		97536CB11DA8152800D56DCF /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		97536CB21DA8152800D56DCF /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		97DE17571DAA69680045E946 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		97DE17591DAA6DEC0045E946 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = "/Volumes/BACKUP/Udemy - iOS 10 and Swift 3 - From Beginner to Paid Professional/05-data-persistence-core-data/attached_files/076-ios-10-app-dreamlister-part-12-itemtype-challenge/DreamLister/DreamLister/CustomTextField.swift"; sourceTree = "<absolute>"; };
 		97F7DDFB1DA96B5F008F33BE /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				970AADE61DA9414D00EF7553 /* MaterialView.swift */,
+				97DE17591DAA6DEC0045E946 /* CustomTextField.swift */,
 				97F7DDFB1DA96B5F008F33BE /* ItemCell.swift */,
 			);
 			name = View;
@@ -130,8 +135,8 @@
 			children = (
 				970AADE51DA9413400EF7553 /* View */,
 				97536CBB1DA8153200D56DCF /* Model */,
+				97DE17561DAA69350045E946 /* Controller */,
 				97536C7A1DA8112600D56DCF /* AppDelegate.swift */,
-				97536C7C1DA8112600D56DCF /* MainVC.swift */,
 				97536C7E1DA8112600D56DCF /* Main.storyboard */,
 				97536C841DA8112600D56DCF /* Assets.xcassets */,
 				97536C861DA8112600D56DCF /* LaunchScreen.storyboard */,
@@ -180,6 +185,15 @@
 				97536CB21DA8152800D56DCF /* ItemType+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		97DE17561DAA69350045E946 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97536C7C1DA8112600D56DCF /* MainVC.swift */,
+				97DE17571DAA69680045E946 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,11 +341,13 @@
 				97536CB31DA8152800D56DCF /* Item+CoreDataClass.swift in Sources */,
 				97536CB51DA8152800D56DCF /* Image+CoreDataClass.swift in Sources */,
 				97536CB81DA8152800D56DCF /* Store+CoreDataProperties.swift in Sources */,
+				97DE17581DAA69680045E946 /* ItemDetailsVC.swift in Sources */,
 				97536C831DA8112600D56DCF /* CoreDataProject.xcdatamodeld in Sources */,
 				97536CBA1DA8152800D56DCF /* ItemType+CoreDataProperties.swift in Sources */,
 				97536CB71DA8152800D56DCF /* Store+CoreDataClass.swift in Sources */,
 				97536CB41DA8152800D56DCF /* Item+CoreDataProperties.swift in Sources */,
 				97536CB61DA8152800D56DCF /* Image+CoreDataProperties.swift in Sources */,
+				97DE175A1DAA6DEC0045E946 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
