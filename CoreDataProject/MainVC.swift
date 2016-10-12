@@ -40,6 +40,26 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let item = controller.object(at: indexPath as IndexPath)
         cell.configureCell(item: item)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        if let objects = controller.fetchedObjects, objects.count > 0 {
+            let item = objects[indexPath.row]
+            performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(segue.identifier)
+        if segue.identifier == "ItemDetailsVC" {
+            if let destination = segue.destination as? ItemDetailsVC {
+                if let item = sender as? Item {
+                    destination.itemToEdit = item
+                }
+            }
+        }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = controller.sections {
